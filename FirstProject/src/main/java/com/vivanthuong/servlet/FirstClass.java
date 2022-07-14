@@ -14,5 +14,7 @@ public class FirstClass extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.getWriter().print("vivanthuong");
+		req.setAttribute("thongbao", "chao mung ban den voi servlet/jsp");
+		req.getRequestDispatcher("/views/firstJsp.jsp").forward(req, resp);
 	}
 }
