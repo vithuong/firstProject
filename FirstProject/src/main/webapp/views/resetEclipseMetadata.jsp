@@ -17,6 +17,20 @@
 	
 	— TARGET RUNTIME for change Servers nameTomcat10(2) to Tomcat10.
 	
+	Github: Clone Project From Github to Local Project
+
+Step1: Delete .metadata file in WorkSpace Folder.
+
+		Resetting everything eclipse
+		rm -rv $WORKSPACE_DIR/.metadata/ After this restart your eclipse
+		Target Runtime For run Tomcat server in Project.
+
+Step2: Clone Github to Local Repository
+		with Authentication String is password commit.
+
+Step3: Import Project From Local Repository.
+		Anything Change in Code will update when we press Commit button’s list menu.
+	
 	</h1>
 </body>
 </html>

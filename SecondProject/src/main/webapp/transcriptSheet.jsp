@@ -33,6 +33,7 @@
 		<em>Nghieng</em>
 		<ins>gach chan</ins>
 		<mark>danh dau</mark>
+		<strike>gach bo</strike>
 		<!-- <strike>gach bo</strike> -->
 		<table border=1 style="width: 100%">
 			<caption>DANH SACH SINH VIEN</caption>

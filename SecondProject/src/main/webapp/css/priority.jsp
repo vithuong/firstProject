@@ -12,7 +12,7 @@
 				color: orange;
 			}
 			.myclass{
-				color: pink;
+				color: blue;
 			}
 			
 		</style>
