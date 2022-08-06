@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.company-info{
+	position: inherit;
+	bottom: 5px;
+}
+.company-info h1 {
+	font-family: sans-serif;
+	font-size: 50px;
+	color: white;
+	text-shadow: 0 0 2px blue;
+	margin-bottom: 0px;
+}
+.company-info strong {
+	border-top: 1px dotted blue;
+	letter-spacing: 1.4px;
+	
+}
