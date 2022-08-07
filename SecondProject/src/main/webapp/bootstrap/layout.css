@@ -4,14 +4,23 @@
 	bottom: 5px;
 }
 .company-info h1 {
-	font-family: sans-serif;
+	font-family: fantasy;
 	font-size: 50px;
-	color: white;
+	color: red;
 	text-shadow: 0 0 2px blue;
 	margin-bottom: 0px;
 }
 .company-info strong {
-	border-top: 1px dotted blue;
+	color: blue;
+	border-top: 1px  blue;
 	letter-spacing: 1.4px;
+	
+}
+.vv-box{
+	text-align: center;
+}
+.vv-box img{
+	max-width: 40%;
+	height: 80px;
 	
 }

@@ -23,9 +23,21 @@
 		<jsp:include page="menu.jsp"/>
 	</nav>
 	<div class="row">
-		<!-- Shopping Cart -->
-		<article class="col-sm-9">MAIN</article>
+		<article class="col-sm-9 alert alert-success">
+			<div class="row">
+				<div class="col-sm-4">
+					<jsp:include page="_item.jsp"/>
+				</div>
+				<div class="col-sm-4">
+					<jsp:include page="_item.jsp"/>
+				</div>
+				<div class="col-sm-4">
+					<jsp:include page="_item.jsp"/>
+				</div>
+			</div>
+		</article>
 		<aside class="col-sm-3 alert alert-success">
+			<!-- Shopping Cart -->
 			<div class="panel panel-default">
 	  			<div class="panel-body">
 	  				<img class="col-xs-5" src="images/shopping-cart.png">
