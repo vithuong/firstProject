@@ -4,9 +4,9 @@
 	bottom: 5px;
 }
 .company-info h1 {
-	font-family: monospace;
-	font-size: 20px;
-	color: blue;
+	font-family: fantasy;
+	font-size: 50px;
+	color: red;
 	text-shadow: 0 0 2px blue;
 	margin-bottom: 0px;
 }
