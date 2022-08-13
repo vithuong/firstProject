@@ -24,7 +24,7 @@
 	</nav>
 	<div class="row">
 		<article class="col-sm-9">
-		<h4 class="alert alert-success">LOGIN FORM</h4>
+		<h4 class="alert alert-success">LOGIN FORM </h4>
 			<form action="" method="get" class="alert alert-success">
 				<div class="form-group">
 					<div class="input-group">
