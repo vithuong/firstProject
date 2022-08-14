@@ -12,18 +12,21 @@
 	<link rel="stylesheet" href="layout.css">
 </head>
 <body class="container">
+	<!-- HEADER -->
 	<header class="row alert alert-success">
 		<div class="company-info">
 			<h1>This is header h1 </h1>
 			<strong>This is website's Slogan</strong>
 		</div>
-		<!-- <img class="pull-right" style="height: 50px; width: 500px;" src="images/header-object.jpg"> -->
 	</header>
+	<!-- MENU NAVIGATION BAR-->
 	<nav class="row">
 		<jsp:include page="menu.jsp"/>
 	</nav>
-	<div class="row">
-		<article class="col-sm-9 alert alert-success">
+	<!-- BODY -->
+	<div class="row alert alert-danger">
+		<!-- MAIN CONTENT ARTICLE -->
+		<article class="col-sm-9 alert alert-info">
 			<div class="row">
 				<div class="col-sm-4">
 					<jsp:include page="_item.jsp"/>
@@ -36,6 +39,7 @@
 				</div>
 			</div>
 		</article>
+		<!-- ASIDE SIDEBAR -->
 		<aside class="col-sm-3 alert alert-success">
 			<!-- Shopping Cart -->
 			<div class="panel panel-default">
@@ -65,6 +69,7 @@
 			</div>
 		</aside>
 	</div>
+	<!-- FOOTER -->
 	<footer class="row alert alert-success">FOOTER</footer>
 </body>
 </html>
