@@ -73,3 +73,4 @@
 	<footer class="row alert alert-success">FOOTER</footer>
 </body>
 </html>
+<jsp:include page="_modal.jsp"/>
