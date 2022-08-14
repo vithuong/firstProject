@@ -11,7 +11,7 @@
 	
 	<link rel="stylesheet" href="layout.css">
 </head>
-<body class="container">
+<body class="container alert alert-warning">
 	<!-- HEADER -->
 	<header class="row alert alert-success">
 		<div class="company-info">
