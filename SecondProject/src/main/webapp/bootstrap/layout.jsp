@@ -53,6 +53,6 @@
 			</div>
 		</aside>
 	</div>
-	<footer class="row">FOOTER</footer>
+	<footer class="row alert alert-success">FOOTER</footer>
 </body>
 </html>

@@ -23,8 +23,9 @@
 		<jsp:include page="menu.jsp"/>
 	</nav>
 	<div class="row">
-		<article class="col-sm-9">
-			<form action="" method="get">
+		<article class="col-sm-9 alert alert-info">
+			<h4 class="alert alert-success">Register Form</h4>
+			<form action="" method="get" class="alert alert-success">
 				<div class="row">
 					<div class="form-group col-sm-6">
 						<label>Username</label>
@@ -97,6 +98,6 @@
 			</div>
 		</aside>
 	</div>
-	<footer class="row">FOOTER</footer>
+	<footer class="row alert alert-success">FOOTER</footer>
 </body>
 </html>
