@@ -1,6 +1,6 @@
 <%@ page pageEncoding="UTF-8"%>
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -37,7 +37,7 @@
 				</div>				
 			</form>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer alert alert-success">
       	<button class="btn btn-primary">Send</button>
         <button class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
