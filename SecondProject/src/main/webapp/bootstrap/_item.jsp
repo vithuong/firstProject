@@ -15,7 +15,7 @@
 				<button class="btn btn-xs btn-danger">
 					<span class="glyphicon glyphicon-heart"></span>
 				</button>
-				<button class="btn btn-xs btn-warning">
+				<button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#myModal">
 					<span class="glyphicon glyphicon-envelope"></span>
 				</button>
 			</div>
