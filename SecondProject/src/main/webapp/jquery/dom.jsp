@@ -51,9 +51,9 @@
 	<button id="button1" style="color: red">Explorer Button</button>
 	<button id="button2" style="color: blue">Add more "ReactJS" word</button>
 	<button id="button3" style="color: orange">Remove li:eq(0)</button>
-</body>
-</html>
-<br>
+	<br>
 <img width="400" height="auto" src="image/html_code.png">
 <br>
 <img width="400" height="auto" src="image/html_code_js.png">
+</body>
+</html>
