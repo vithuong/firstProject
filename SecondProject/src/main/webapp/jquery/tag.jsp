@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>jQuery copy only template</title>
+	<title>ATTR CSS HTML</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!-- you can remove "(document).ready" and create short script-->
 	<script>
