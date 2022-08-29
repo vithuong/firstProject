@@ -2,9 +2,11 @@ package com.vvthuong.app;
 
 public class Hello {
 	public static void main(String[] args) {
-		hello();//error because Static method only work with static method.
+		hello();//fix error because Static method only work with static method.
+		//vua roi la to chuc theo huong thu tuc, tu ham nay ta goi ham khac.
 	}
-	private void hello() {
+	@SuppressWarnings("unused")
+	private static void hello() {
 		System.out.println("Vi");
 		System.out.println("Thuong");
 		
