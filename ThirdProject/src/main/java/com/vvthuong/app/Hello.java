@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Hello {
 	public static void main(String[] args) {
-		//hello();//fix error because Static method only work with static method.
+		hello();//fix error because Static method only work with static method.
 		//vua roi la to chuc theo huong thu tuc, tu ham nay ta goi ham khac.
 		input();
 	}
 	private static void input() {
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print(">>Name: ");
@@ -22,7 +23,6 @@ public class Hello {
 		
 		System.out.printf("Input done: %s, %f, %d", fullname, salary, age);
 	}
-	@SuppressWarnings("unused")
 	private static void hello() {
 		System.out.println("Vi");
 		System.out.println("Thường");
