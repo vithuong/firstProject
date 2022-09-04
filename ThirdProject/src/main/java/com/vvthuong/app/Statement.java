@@ -3,7 +3,29 @@ package com.vvthuong.app;
 public class Statement {
 
 	public static void main(String[] args) {
-		ptb2();
+		// ptb2();
+		dayInMonth();
+	}
+
+	private static void dayInMonth() {
+		// int year = 2022, month = 9;
+		// int year = 2022, month = 8;
+		int year = 2024, month = 2;
+		switch (month) {
+		case 2:
+			int days = (year % 4 == 0 & year % 100 != 0) ? 29 : 28;
+			System.out.printf("Son ngay cua thang 2/%d la %d", year, days);
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.printf("So ngay cua thang %d/%d la 30", month, year);
+			break;
+		default:
+			System.out.printf("So ngay cua thang %d/%d la 31", month, year);
+			break;
+		}
 
 	}
 
