@@ -4,7 +4,56 @@ public class Statement {
 
 	public static void main(String[] args) {
 		// ptb2();
-		dayInMonth();
+		// dayInMonth();
+		detachmentNumber();
+
+	}
+
+	private static void detachmentNumber() {
+		int n = 123, total = 0, count = 0, reverse = 0;
+		// Xuat tat ca cac chu so cua n ra man hinh ( bat dau tu hang don vi)
+		while (n > 0) {
+			int x = n % 10;
+			System.out.println(x);
+			n = n / 10;
+			total += x;
+			if (x % 2 == 1) {
+				count++;
+			}
+			reverse = reverse * 10 + x;
+		}
+		// Xuat tong cac chu so cua n
+		System.out.println("Tong: " + total);
+		// Xuat cac chu so le cua n
+		System.out.println("Tong so so le: " + count);
+		// Xuat cac uoc so cua n
+		int m = 7, i = 1, total2 = 0;
+		System.out.println("cac uoc so cua " + m + " la: ");
+		while (i < m / 2) {
+			if (m % i == 0) {
+				System.out.println(i);
+				total2 += i;
+			}
+			i++;
+		}
+		// Xuat so dao nguoc cua n
+		System.out.println("so dao nguoc = " + reverse);
+		// Kiem tra n co phai so hoan thien hay khong
+		if (total2 == m) {
+			System.out.println(m + " la so hoan thien");
+		} else {
+			System.out.println(m + " khong phai so hoan thien");
+		}
+		// Kiem tra n co phai so nguyen to hay khong
+		boolean isNguyenTo = true;
+		i = 2;
+		while (i < m / 2) {
+			if (m % i == 0) {
+				isNguyenTo = false;
+			}
+			i++;
+		}
+		System.out.println(isNguyenTo ? m + " la so nguyen to" : m + " khong phai la so nguyen to");
 	}
 
 	private static void dayInMonth() {
