@@ -3,9 +3,25 @@ package com.vvthuong.app;
 public class Statement {
 
 	public static void main(String[] args) {
+		testVongLap();
 		// ptb2();
 		// dayInMonth();
-		detachmentNumber();
+		// detachmentNumber();
+
+	}
+
+	private static void testVongLap() {
+		// vi tri cua cac phan tu, i la index
+		// duyet theo vi tri
+		int[] array = { 1, 2, 3, 4, 5 };
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(i);
+		}
+		// nhat tung phan tu ra
+		// duyet theo phan tu
+		for (int i : array) {
+			System.out.println(i);
+		}
 
 	}
 
