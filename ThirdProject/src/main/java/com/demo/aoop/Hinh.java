@@ -1,4 +1,4 @@
-package com.demo.plmpoop;
+package com.demo.aoop;
 
 public class Hinh {
 	protected String name;

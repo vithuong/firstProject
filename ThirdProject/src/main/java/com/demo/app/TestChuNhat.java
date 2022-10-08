@@ -7,8 +7,6 @@ public class TestChuNhat {
 		ChuNhat cn = new ChuNhat(3);
 		cn.setDai(44);
 		double dt = cn.getDienTich();
-		cn.print("thong tin hinh chu nhat");
-
+		cn.print("thong tin hinh chu nhat");	
 	}
-
 }

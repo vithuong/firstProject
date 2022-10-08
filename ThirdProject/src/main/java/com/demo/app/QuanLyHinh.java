@@ -1,6 +1,9 @@
 package com.demo.app;
 
-import com.demo.plmpoop.Hinh;
+import com.demo.aoop.ChuNhat;
+import com.demo.aoop.Hinh;
+import com.demo.aoop.HinhTron;
+import com.demo.aoop.HinhVuong;
 
 public class QuanLyHinh {
 

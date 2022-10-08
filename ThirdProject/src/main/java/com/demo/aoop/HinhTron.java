@@ -1,6 +1,4 @@
-package com.demo.app;
-
-import com.demo.plmpoop.Hinh;
+package com.demo.aoop;
 
 public class HinhTron extends Hinh {
 	double banKinh;

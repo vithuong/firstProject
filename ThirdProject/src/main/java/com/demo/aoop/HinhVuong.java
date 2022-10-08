@@ -1,4 +1,4 @@
-package com.demo.app;
+package com.demo.aoop;
 
 public class HinhVuong extends ChuNhat {
 	double canh;

@@ -1,6 +1,4 @@
-package com.demo.app;
-
-import com.demo.plmpoop.Hinh;
+package com.demo.aoop;
 
 public class ChuNhat extends Hinh {
 	double rong;
