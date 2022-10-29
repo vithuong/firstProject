@@ -18,5 +18,6 @@ public class Demo {
 		System.out.println(">> Start With: " + s.startsWith("Xuat"));
 		
 		
+		
 	}
 }
