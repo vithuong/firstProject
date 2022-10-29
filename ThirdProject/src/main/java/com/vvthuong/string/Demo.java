@@ -17,5 +17,6 @@ public class Demo {
 		System.out.println(">> Last indexOf : " + s.lastIndexOf("hinh"));
 		System.out.println(">> Start With: " + s.startsWith("Xuat"));
 		
+		
 	}
 }
