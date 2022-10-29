@@ -1,13 +1,18 @@
 package com.vvthuong.string;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Demo {
 	public static void main(String[] args) {
 		// demo1();
-		// demo2();
+		demo2();
 		// demo3();
-		demo4();
+		// demo4();
 	}
 
 	private static void demo4() {
@@ -48,17 +53,43 @@ public class Demo {
 	}
 
 	private static void demo2() {
-		String s = "1,2'3' 5,6,7";
+		String s = "1,2'2' 5,6,7";
+
+		// Convert String to Array
 		String[] ss = s.split("[,' ]+");
+		System.out.println("String split to Array: " + Arrays.toString(ss));
+
+		// Convert Array to Set
+		Set<Integer> set = new HashSet<Integer>();
+		for (String d : ss) {
+			int e = Integer.parseInt(d);
+			set.add(e);
+		}
+		System.out.println("Array to Set: " + set.toString());
+
+		// Convert Array to List
+		List<Integer> list = new ArrayList<Integer>();
+		for (String f : ss) {
+			int g = Integer.parseInt(f);
+			list.add(g);
+		}
+		System.out.println("Array to List: " + list.toString());
+		// Convert List to Set
+		Set<Integer> set1 = new HashSet<Integer>();
+		set1.addAll(list);
+		System.out.println("Convert List to set: " + set1.toString());
+
+		// Convert Set to List
+		List<Integer> list1 = new ArrayList<Integer>();
+		list1.addAll(set);
+		System.out.println("Cnvert Set to List: " + list1.toString());
+
+		// Print even number to Screen.
 		for (String a : ss) {
 			int b = Integer.parseInt(a);
-			// System.out.println(b);
-			// tach chuoi s cho vao arrray, sau do duyet array, chuyen string sang int va
-			// lay so le
-			if (b % 2 == 1) {
-				System.out.println(b);
+			if (b % 2 == 0) {
+				System.out.println("evenNumber: " + b);
 			}
-
 		}
 	}
 
