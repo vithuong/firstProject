@@ -10,7 +10,7 @@ import java.util.Set;
 public class Demo {
 	public static void main(String[] args) {
 		// demo1();
-		demo2();
+		 demo2();
 		// demo3();
 		// demo4();
 	}
@@ -57,7 +57,8 @@ public class Demo {
 
 		// Convert String to Array
 		String[] ss = s.split("[,' ]+");
-		System.out.println("String split to Array: " + Arrays.toString(ss));
+		System.out.println("String split to Array \n "
+				+ "print Array ra phai dung library Arrays.toString(): " + Arrays.toString(ss));
 
 		// Convert Array to Set
 		Set<Integer> set = new HashSet<Integer>();
@@ -91,6 +92,24 @@ public class Demo {
 				System.out.println("evenNumber: " + b);
 			}
 		}
+		// Mot cach khac chuyen tu Array sang List kieu tuong ung.
+		List<String> listNew = Arrays.asList(ss);
+		System.out.println("cach khac Arrays_as_List nhanh: " + listNew);
+		Set<String> setNew = new HashSet<String>();
+		setNew.addAll(listNew);
+		System.out.println("chuyen cai list nhanh ben tren thanh set add all: " + setNew);
+		
+		// binary Search trong Array
+		int iBinarySearch = Arrays.binarySearch(ss, "7");
+		System.out.println("vi tri so string 7 la: " + iBinarySearch);
+		
+		// Sap xep mang theo thu tu tang dan
+		Arrays.sort(ss);
+		System.out.println("Array sau khi dung Arrays.sort(ss) se la: " + Arrays.toString(ss));
+		
+		// Gan 1 gia tri cho tat ca cac phan tu trong mang
+		Arrays.fill(ss, "7");
+		System.out.println("gan str 7 cho tat ca cac element trong mang: " + Arrays.toString(ss));
 	}
 
 	private static void demo1() {
