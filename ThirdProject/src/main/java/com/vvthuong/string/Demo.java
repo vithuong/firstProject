@@ -10,7 +10,7 @@ import java.util.Set;
 public class Demo {
 	public static void main(String[] args) {
 		// demo1();
-		 demo2();
+		// demo2();
 		// demo3();
 		// demo4();
 	}
@@ -47,6 +47,7 @@ public class Demo {
 		for (String name : names) {
 			if (name.contains("thi")) {
 				String nameOnly = name.substring(name.lastIndexOf(" ") + 1);
+				System.out.println(nameOnly);
 			}
 		}
 
@@ -55,10 +56,15 @@ public class Demo {
 	private static void demo2() {
 		String s = "1,2'2' 5,6,7";
 
+		byte[] tt = s.getBytes();
+		System.out.println(s);
+		System.out.println(">>> in thu" + tt);
+		System.out.println(">>> HTML Encoding (Character Sets)" + Arrays.toString(tt));
+
 		// Convert String to Array
 		String[] ss = s.split("[,' ]+");
-		System.out.println("String split to Array \n "
-				+ "print Array ra phai dung library Arrays.toString(): " + Arrays.toString(ss));
+		System.out.println("String split to Array \n " + "print Array ra phai dung library Arrays.toString(): "
+				+ Arrays.toString(ss));
 
 		// Convert Array to Set
 		Set<Integer> set = new HashSet<Integer>();
@@ -95,18 +101,19 @@ public class Demo {
 		// Mot cach khac chuyen tu Array sang List kieu tuong ung.
 		List<String> listNew = Arrays.asList(ss);
 		System.out.println("cach khac Arrays_as_List nhanh: " + listNew);
+		// Tu list doi sang
 		Set<String> setNew = new HashSet<String>();
 		setNew.addAll(listNew);
 		System.out.println("chuyen cai list nhanh ben tren thanh set add all: " + setNew);
-		
+
 		// binary Search trong Array
 		int iBinarySearch = Arrays.binarySearch(ss, "7");
 		System.out.println("vi tri so string 7 la: " + iBinarySearch);
-		
+
 		// Sap xep mang theo thu tu tang dan
 		Arrays.sort(ss);
 		System.out.println("Array sau khi dung Arrays.sort(ss) se la: " + Arrays.toString(ss));
-		
+
 		// Gan 1 gia tri cho tat ca cac phan tu trong mang
 		Arrays.fill(ss, "7");
 		System.out.println("gan str 7 cho tat ca cac element trong mang: " + Arrays.toString(ss));
