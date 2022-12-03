@@ -3,22 +3,45 @@ package com.vvthuong.collection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class Demo2 {
+import com.demo.oop.PhuongTrinhBacHaiObject;
+
+public class Demo2withPTB2Object {
 	// collection dung rat nhieu, tap trung vao phan nay, de hieu thoi.
 	public static void main(String[] args) {
 		// demo1();
 		demo2();
 
 	}
-	//tao ra 1 list de chua phuong trinh bac 2
+
+	// tao ra 1 list de chua phuong trinh bac 2
 	private static void demo2() {
-		List<PhuongTrinhBacHai> list = new ArrayList<>();
-		list.add(new PhuongTrinhBacHai(2, 3, -5));
-		list.add(new PhuongTrinhBacHai(2, 4, 2));
-		list.add(new PhuongTrinhBacHai(1, 2, 3));
+		List<PhuongTrinhBacHaiObject> list = new ArrayList<>();
+		list.add(new PhuongTrinhBacHaiObject(2, 3, -5));
+		list.add(new PhuongTrinhBacHaiObject(2, 4, 2));
+		list.add(new PhuongTrinhBacHaiObject(1, 2, 3));
 		
+		Comparator<PhuongTrinhBacHaiObject> soSanhComparator = new Comparator<PhuongTrinhBacHaiObject>() {
+			@Override
+			public int compare(PhuongTrinhBacHaiObject o1, PhuongTrinhBacHaiObject o2) {
+				// TODO Auto-generated method stub
+				// bay gio no dang sap xep theo he so b
+				if (o1.getB() <  o2.getB()) {
+					return -1;
+				}
+				if (o1.getB() == o2.getB()) {
+					return 0;
+				}
+				return 1;
+				
+			}
+		};
+		
+		Collections.sort(list, soSanhComparator);
+		System.out.println(list.toString());
+
 		list.forEach(p -> {
 			p.giaiPhuongTrinhBacHai();
 			System.out.println("--------");

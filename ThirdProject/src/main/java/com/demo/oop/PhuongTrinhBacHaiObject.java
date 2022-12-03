@@ -1,18 +1,51 @@
-package com.vvthuong.collection;
+package com.demo.oop;
 
-public class PhuongTrinhBacHai {
+public class PhuongTrinhBacHaiObject {
 	double a, b, c;
 
-	public PhuongTrinhBacHai(double a, double b, double c) {
+	
+	public PhuongTrinhBacHaiObject(double a, double b, double c) {
 		super();
 		this.a = a;
 		this.b = b;
 		this.c = c;
 	}
+	
+	
 	// Class nay de mo ta cai phuong trinh bac 2.
 	// Delta la phuong thuc noi bo nen de private
 	// Giai PT la cong khai
 	// tao ra 1 constructor de dua abc vao
+
+	public double getA() {
+		return a;
+	}
+
+
+	public void setA(double a) {
+		this.a = a;
+	}
+
+
+	public double getB() {
+		return b;
+	}
+
+
+	public void setB(double b) {
+		this.b = b;
+	}
+
+
+	public double getC() {
+		return c;
+	}
+
+
+	public void setC(double c) {
+		this.c = c;
+	}
+
 
 	private double getDelta() {
 		return Math.pow(b, 2) - 4 * a * c;
