@@ -14,7 +14,7 @@
 				console.log("Equal: " + fullname);
 			}
 		});
-	</script>
+	</script> 
 </head>
 <body>
 	<h1>Hello Jquery World !</h1>

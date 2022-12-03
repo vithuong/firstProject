@@ -18,7 +18,7 @@
 			<h1>This is header h1 </h1>
 			<strong>This is website's Slogan</strong>
 		</div>
-	</header>
+	</header> 
 	<!-- MENU NAVIGATION BAR-->
 	<nav class="row">
 		<jsp:include page="menu.jsp"/>

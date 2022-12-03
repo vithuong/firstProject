@@ -1,5 +1,4 @@
 <%@ page pageEncoding="UTF-8"%>
-
 <div class="panel panel-default vv-box">
 	<div class="panel-heading">Product Name</div>
 	<div class="panel-body">
@@ -15,7 +14,8 @@
 				<button class="btn btn-xs btn-danger">
 					<span class="glyphicon glyphicon-heart"></span>
 				</button>
-				<button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#myModal">
+				<button class="btn btn-xs btn-warning" data-toggle="modal"
+					data-target="#myModal">
 					<span class="glyphicon glyphicon-envelope"></span>
 				</button>
 			</div>
