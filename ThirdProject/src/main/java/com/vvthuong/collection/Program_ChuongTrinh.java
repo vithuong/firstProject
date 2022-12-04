@@ -5,21 +5,20 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Program_ChuongTrinh {
-	// khai bao o day de dung chung cho moi phuong thuc
-	// vi moi phuong thuc la static nen ta them static moi dung duoc
 	static Scanner scaner = new Scanner(System.in);
-	// khi nhap vao ta can 1 cai list dung chung cho moi ham nen nhap o day
 	static List<Item_SanPham> list = new ArrayList<>();
 
 	public static void main(String[] args) {
 		while (true) {
 			menu();
+			System.out.println();
 		}
 
 	}
 
 	private static void menu() {
-		System.out.println("---INPUT PRODUCT LIST HERE: ---");
+		System.out.println("__________________");
+		System.out.println("VUI LONG CHON DANH SACH CHUC NANG: ");
 		System.out.println("---------");
 		System.out.println("1. Input Product");
 		System.out.println("2. Output Product");
@@ -81,66 +80,69 @@ public class Program_ChuongTrinh {
 
 	private static void filterById() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	private static void filterByPrice() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	private static void suffleRandom() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	private static void findAndDelete() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	private static void findAndEdit() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	private static void outPutByPrice() {
-		// TODO Auto-generated method stub
+		System.out.println("________________________");
+		System.out.println("TIM THEO KHOANG GIA SAN PHAM");
+		System.out.println("gia min: ");
+		double min = scaner.nextDouble();
+		System.out.println("gia max: ");
+		double max = scaner.nextDouble();
 		
+		list.forEach(item -> {
+			if (item.getPrice() >= min && item.getPrice() <= max) {
+				System.out.println(">>ID...." + item.getId() + ".....PRICE...." + item.getPrice());
+			}
+			
+		});
+
 	}
 
 	private static void output() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("________________________");
+		System.out.println("XUAT DANH SACH SAN PHAM");
+		list.forEach(Item_SanPham -> {
+			System.out.println(">>ID...." + Item_SanPham.getId() + ".....PRICE...." + Item_SanPham.getPrice());
+		});
+
 	}
 
 	private static void input() {
 		while (true) {
-			System.out.println("QUAN LY SAN PHAM");
-			// neu khong dung constructor trong object item_sanpham thi:
-//			Item_SanPham item = new Item_SanPham();
-//			System.out.println(">>> id Product ? ");
-//			item.setId(scaner.nextLine());
-//			System.out.println(">>> price Product ? ");
-//			item.setPrice(scaner.nextDouble());
-//			// van con thua dau enter nen thai hoi Enter
-//			scaner.nextLine();
-//			// nhap xong thi bo vao list
-//			list.add(item);
-			// viet the nay thi qua ruom ra, nhung nhu the nay thi de hieu.
-			System.out.println(">>> id Product ? ");
+			System.out.println("NHAP SO LIEU SAN PHAM O DAY");
+			
+			System.out.println("ID = ");
 			String id = scaner.nextLine();
-			// khi nao dung lai ? khi ma id null thi dung lai, nghia la nguoi ta khong nhap
-			// nua
 			if (id.trim().length() == 0) {
 				break;
 			}
-
-			System.out.println(">>> price Product ? ");
+			System.out.println("PRICE = ");
 			Double price = scaner.nextDouble();
 			scaner.nextLine();
-
-			list.add(new Item_SanPham(id, price));
+			Item_SanPham item = new Item_SanPham(id, price);
+			list.add(item );
 
 		}
 
