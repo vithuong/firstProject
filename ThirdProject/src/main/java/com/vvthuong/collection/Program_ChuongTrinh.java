@@ -1,9 +1,11 @@
 package com.vvthuong.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+// chu y chuc nang sap xep
 public class Program_ChuongTrinh {
 	static Scanner scaner = new Scanner(System.in);
 	static List<Item_SanPhamObject> list = new ArrayList<>();
@@ -87,9 +89,9 @@ public class Program_ChuongTrinh {
 		// TODO Auto-generated method stub
 
 	}
-
+	// chức năng hoán vị ngẫu nhiên
 	private static void suffleRandom() {
-		// TODO Auto-generated method stub
+		 Collections.shuffle(list);
 
 	}
 
