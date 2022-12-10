@@ -86,8 +86,7 @@ public class Program_ChuongTrinh {
 		Comparator<Item_SanPhamObject> comparator = new Comparator<Item_SanPhamObject>() {
 			@Override
 			public int compare(Item_SanPhamObject o1, Item_SanPhamObject o2) {
-				o1.getId().compareTo(o2.getId());
-				return 0;
+				return o1.getId().compareTo(o2.getId());
 			}
 		};
 		Collections.sort(list, comparator);
@@ -100,8 +99,7 @@ public class Program_ChuongTrinh {
 		Comparator<Item_SanPhamObject> comparator = new Comparator<Item_SanPhamObject>() {
 			@Override
 			public int compare(Item_SanPhamObject o1, Item_SanPhamObject o2) {
-				o1.getPrice().compareTo(o2.getPrice());
-				return 0;
+				return o1.getPrice().compareTo(o2.getPrice());
 			}
 		};
 		Collections.sort(list, comparator);
