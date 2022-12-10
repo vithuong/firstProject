@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Program_ChuongTrinh {
 	static Scanner scaner = new Scanner(System.in);
-	static List<Item_SanPham> list = new ArrayList<>();
+	static List<Item_SanPhamObject> list = new ArrayList<>();
 
 	public static void main(String[] args) {
 		while (true) {
@@ -99,7 +99,20 @@ public class Program_ChuongTrinh {
 	}
 
 	private static void findAndEdit() {
-		// TODO Auto-generated method stub
+		System.out.println("TIM VA SUA");
+		System.out.println(" ma san pham can sua: ");
+		System.out.println();
+		String id = scaner.nextLine();
+		// dung vong lap de break duoc, vong lap string.foreach khong break duoc
+		// neu id nhap ma bang id cua sp thi ta sua, co nghia la nhap lai gia moi nhe
+		for(Item_SanPhamObject item : list) {
+			if(id.equals(item.getId())) {
+				System.out.println("vui long nhap gia moi: ");
+				Double price = scaner.nextDouble();
+				item.setPrice(price);
+				break;
+ 			}
+		}
 
 	}
 
@@ -141,7 +154,7 @@ public class Program_ChuongTrinh {
 			System.out.println("PRICE = ");
 			Double price = scaner.nextDouble();
 			scaner.nextLine();
-			Item_SanPham item = new Item_SanPham(id, price);
+			Item_SanPhamObject item = new Item_SanPhamObject(id, price);
 			list.add(item );
 
 		}

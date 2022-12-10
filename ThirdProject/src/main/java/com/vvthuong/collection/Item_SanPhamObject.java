@@ -1,9 +1,9 @@
 package com.vvthuong.collection;
 
-public class Item_SanPham {
+public class Item_SanPhamObject {
 	String id;
 	Double price;
-	public Item_SanPham(String id, Double price) {
+	public Item_SanPhamObject(String id, Double price) {
 		super();
 		this.id = id;
 		this.price = price;
