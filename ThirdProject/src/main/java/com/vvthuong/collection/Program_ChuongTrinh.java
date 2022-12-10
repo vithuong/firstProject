@@ -2,6 +2,7 @@ package com.vvthuong.collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -84,13 +85,23 @@ public class Program_ChuongTrinh {
 		// TODO Auto-generated method stub
 
 	}
-
+	// chu y: chi dung duoc comparator khi va chi khi doi tuong khai bao field la wrapper
+	// khong dung comparator voi kieu nguyen thuy primitive
 	private static void filterByPrice() {
-		// TODO Auto-generated method stub
-
+		System.out.println(" SAP XEP THEO GIA");
+		Comparator<Item_SanPhamObject> comparator = new Comparator<Item_SanPhamObject>() {
+			@Override
+			public int compare(Item_SanPhamObject o1, Item_SanPhamObject o2) {
+				o1.getPrice().compareTo(o2.getPrice());
+				return 0;
+			}
+		};
+		Collections.sort(list, comparator);
+		
 	}
 	// chức năng hoán vị ngẫu nhiên
 	private static void suffleRandom() {
+		System.out.println("HOAN VI NGAU NHIEN");
 		 Collections.shuffle(list);
 
 	}
