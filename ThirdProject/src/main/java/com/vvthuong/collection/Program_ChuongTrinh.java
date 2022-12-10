@@ -94,7 +94,19 @@ public class Program_ChuongTrinh {
 	}
 
 	private static void findAndDelete() {
-		// TODO Auto-generated method stub
+		System.out.println("TIM VA XOA");
+		System.out.println(" ma san pham can xoa: ");
+		System.out.println();
+		String id = scaner.nextLine();
+		// dung vong lap de break duoc, vong lap string.foreach khong break duoc
+		// xoa sp co nghia la xoa ca id va price, co nghia la xoa 1 phan tu trong list do.
+		for (Item_SanPhamObject item : list) {
+			if (id.equals(item.getId())) {
+				list.remove(item);
+				System.out.println("san pham co id = " + id + " da xoa thanh cong");
+				break;
+			}
+		}
 
 	}
 
@@ -105,13 +117,13 @@ public class Program_ChuongTrinh {
 		String id = scaner.nextLine();
 		// dung vong lap de break duoc, vong lap string.foreach khong break duoc
 		// neu id nhap ma bang id cua sp thi ta sua, co nghia la nhap lai gia moi nhe
-		for(Item_SanPhamObject item : list) {
-			if(id.equals(item.getId())) {
+		for (Item_SanPhamObject item : list) {
+			if (id.equals(item.getId())) {
 				System.out.println("vui long nhap gia moi: ");
 				Double price = scaner.nextDouble();
 				item.setPrice(price);
 				break;
- 			}
+			}
 		}
 
 	}
@@ -123,12 +135,12 @@ public class Program_ChuongTrinh {
 		double min = scaner.nextDouble();
 		System.out.println("gia max: ");
 		double max = scaner.nextDouble();
-		
+
 		list.forEach(item -> {
 			if (item.getPrice() >= min && item.getPrice() <= max) {
 				System.out.println(">>ID...." + item.getId() + ".....PRICE...." + item.getPrice());
 			}
-			
+
 		});
 
 	}
@@ -145,7 +157,7 @@ public class Program_ChuongTrinh {
 	private static void input() {
 		while (true) {
 			System.out.println("NHAP SO LIEU SAN PHAM O DAY");
-			
+
 			System.out.println("ID = ");
 			String id = scaner.nextLine();
 			if (id.trim().length() == 0) {
@@ -155,7 +167,7 @@ public class Program_ChuongTrinh {
 			Double price = scaner.nextDouble();
 			scaner.nextLine();
 			Item_SanPhamObject item = new Item_SanPhamObject(id, price);
-			list.add(item );
+			list.add(item);
 
 		}
 
