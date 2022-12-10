@@ -80,9 +80,17 @@ public class Program_ChuongTrinh {
 			break;
 		}
 	}
-
+	// copy y chang filterByPrice, chi khac la getId thoi.
 	private static void filterById() {
-		// TODO Auto-generated method stub
+		System.out.println(" SAP XEP THEO Id");
+		Comparator<Item_SanPhamObject> comparator = new Comparator<Item_SanPhamObject>() {
+			@Override
+			public int compare(Item_SanPhamObject o1, Item_SanPhamObject o2) {
+				o1.getId().compareTo(o2.getId());
+				return 0;
+			}
+		};
+		Collections.sort(list, comparator);
 
 	}
 	// chu y: chi dung duoc comparator khi va chi khi doi tuong khai bao field la wrapper
