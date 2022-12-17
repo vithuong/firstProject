@@ -80,6 +80,7 @@ public class Program_ChuongTrinh {
 			break;
 		}
 	}
+
 	// copy y chang filterByPrice, chi khac la getId thoi.
 	private static void filterById() {
 		System.out.println(" SAP XEP THEO Id");
@@ -92,7 +93,9 @@ public class Program_ChuongTrinh {
 		Collections.sort(list, comparator);
 
 	}
-	// chu y: chi dung duoc comparator khi va chi khi doi tuong khai bao field la wrapper
+
+	// chu y: chi dung duoc comparator khi va chi khi doi tuong khai bao field la
+	// wrapper
 	// khong dung comparator voi kieu nguyen thuy primitive
 	private static void filterByPrice() {
 		System.out.println(" SAP XEP THEO GIA");
@@ -103,12 +106,13 @@ public class Program_ChuongTrinh {
 			}
 		};
 		Collections.sort(list, comparator);
-		
+
 	}
+
 	// chức năng hoán vị ngẫu nhiên
 	private static void suffleRandom() {
 		System.out.println("HOAN VI NGAU NHIEN");
-		 Collections.shuffle(list);
+		Collections.shuffle(list);
 
 	}
 
@@ -118,7 +122,8 @@ public class Program_ChuongTrinh {
 		System.out.println();
 		String id = scaner.nextLine();
 		// dung vong lap de break duoc, vong lap string.foreach khong break duoc
-		// xoa sp co nghia la xoa ca id va price, co nghia la xoa 1 phan tu trong list do.
+		// xoa sp co nghia la xoa ca id va price, co nghia la xoa 1 phan tu trong list
+		// do.
 		for (Item_SanPhamObject item : list) {
 			if (id.equals(item.getId())) {
 				list.remove(item);
