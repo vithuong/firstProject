@@ -7,7 +7,11 @@
 	<name>Jdbc demo by Mr Thuong</name>
 	<description>make file .Pom easy</description>
 	<dependencies>
-
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
 		<dependency>
