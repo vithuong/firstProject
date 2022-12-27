@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class JdbcDemo1 {
-
 	private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private static String dburl = "jdbc:sqlserver://localhost;database=EShop;encrypt=true;trustServerCertificate=true;";
 	private static String user = "sa";
